@@ -1,0 +1,127 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+html, body {height: 100%;}
+
+body {
+      margin: auto 0;
+       background-image: url('../images/bkg.png');
+       background-repeat: repeat;
+     font-family: 'Source Sans Pro', sans-serif
+  }
+#wrap {min-height: 100%;}
+
+#main {
+  overflow:auto;
+  padding-bottom: 180px;}  /* must be same height as the footer */
+
+#footer {
+  position: relative;
+  /*margin-top: -180px;  negative value of footer height */
+  height: 80px;
+  clear:both;
+  padding-top: .5em;
+  padding-left: .5em;
+  margin-left: 8em;
+  margin-right: 8em;
+  border-top: 1px solid black;
+  font-size: 14px;
+  /*background-color: #ccc;*/
+}
+
+
+
+header {
+  display: block;
+}
+
+#begin {
+  padding: 40px 0 40px 40px;
+    /*border-bottom: dotted black 1px;*/
+
+}
+
+figure.logo {
+/* display: block;
+position: relative;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 23%;
+z-index: 1;*/
+width: 191px;
+/*margin-left: 18px;*/
+height: 160px;
+/*padding-left: 10px;
+padding-right: -10px;*/
+background-image: url('../images/CT_logo.png');
+
+}
+
+figure.logo h2 {
+  padding-top: 150px;
+  width: 250px;
+  font-size: 200%;
+}
+
+
+
+h1 {
+  color: #7cc576;
+  font-family: Georgia;
+  font-size: 400%;
+  letter-spacing: .15em;
+  text-align: center;
+}
+
+#contact {
+  margin-top: -16px;
+  margin-left: -13px;
+}
+
+#contact a{
+  margin: 20px;
+}
+
+/*#sidebar {
+  position: fixed;
+  width: 26%;
+  z-index: 1;
+  position: absolute;
+
+}*/
+
+.large-4.columns h3 {
+  margin-left: 6px;
+  margin-top: 27px;
+  color: #7cc576;
+  font-size: 120%;
+}
+
+.large-4.columns p {
+  margin-left: 6px;
+  margin-top: 10px;
+  width: 250px;
+  font-size: 14px;
+
+}
+
+.large-8.columns p {
+  font-size: 17px;
+  display: inline-block;
+  float: left;
+  margin-left: 30px
+}
+
+/*#forkme_banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px
+}*/
