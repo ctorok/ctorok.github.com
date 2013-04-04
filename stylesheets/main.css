@@ -12,13 +12,14 @@ body {
 
 #main {
   overflow:auto;
-  padding-bottom: 180px;}  /* must be same height as the footer */
+  padding-bottom: 180px
+  }  /* must be same height as the footer */
 
 #footer {
   position: relative;
-  /*margin-top: -180px;  negative value of footer height */
+  margin-top: -100px;  /*negative value of footer height */
   height: 80px;
-  clear:both;
+  clear: both;
   padding-top: .5em;
   padding-left: .5em;
   margin-left: 8em;
@@ -28,6 +29,11 @@ body {
   /*background-color: #ccc;*/
 }
 
+.text-stroke {
+  -webkit-text-stroke: 1px #444;
+  letter-spacing: .075em;
+  font-size: 95%
+}
 
 
 header {
@@ -78,16 +84,9 @@ h1 {
 }
 
 #contact a{
-  margin: 20px;
+  margin: 1em .25em .25em .75em;
 }
 
-/*#sidebar {
-  position: fixed;
-  width: 26%;
-  z-index: 1;
-  position: absolute;
-
-}*/
 
 .large-4.columns h3 {
   margin-left: 6px;
