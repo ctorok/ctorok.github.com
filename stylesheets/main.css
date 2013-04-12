@@ -1,126 +1,213 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("http://fonts.googleapis.com/css?family=Cutive");
 
 html, body {height: 100%;}
 
 body {
-      margin: auto 0;
-       background-image: url('../images/bkg.png');
-       background-repeat: repeat;
-     font-family: 'Source Sans Pro', sans-serif
+  // margin: auto 0;
+  background-image: url('../images/bkg.png');
+  background-repeat: repeat;
+  // background-repeatd: #fff;
+  color: #373737;
+  // font-weight: 400;
   }
-#wrap {min-height: 100%;}
+
+.font-sourcesans {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font-cutive {
+  font-family: Cutive, Georgia;
+}
+
+#wrap {min-height: 100%;
+}
 
 #main {
-  overflow:auto;
-  padding-bottom: 180px
-  }  /* must be same height as the footer */
+  overflow: auto;
+  // padding-bottom: 180px;
+  margin-top: 7.5em;
+}  /* must be same height as the footer */
 
-#footer {
-  position: relative;
-  margin-top: -100px;  /*negative value of footer height */
+
+.blue {
+  background: #606c88; /* Old browsers */
+  background: -moz-linear-gradient(top,  #606c88 34%, #3f4c6b 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%,#606c88), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #606c88 34%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #606c88 34%,#3f4c6b 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #606c88 34%,#3f4c6b 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #606c88 34%,#3f4c6b 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+}
+
+.standard {
   height: 80px;
-  clear: both;
-  padding-top: .5em;
-  padding-left: .5em;
-  margin-left: 8em;
-  margin-right: 8em;
-  border-top: 1px solid black;
-  font-size: 14px;
-  /*background-color: #ccc;*/
+  display: block;
+  width: 100%;
 }
 
 .text-stroke {
-  -webkit-text-stroke: 1px #444;
+  // -webkit-text-stroke: 1px #b8373b;
+  -webkit-text-stroke: .065em #606c88;
   letter-spacing: .075em;
-  font-size: 95%
+  font-variant: small-caps;
 }
 
+#header {
+  border-bottom: 1px solid #606c88;
+  // box-shadow: 0 0 10px #fff;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
 
-header {
-  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.75em 1em;
+  left: 0;
+  position: fixed;
+  top: 0
 }
 
-#begin {
-  padding: 40px 0 40px 40px;
-    /*border-bottom: dotted black 1px;*/
+// #header:hover {
+//   // border-bottom: 1px solid #f0f0f0;
+//   box-shadow: 0 0 10px #242833;
+//     -webkit-opacity: .7;
+//   -moz-opacity: .7;
+//   opacity: .7;
+// }
 
-}
-
-figure.logo {
-/* display: block;
-position: relative;
-border-radius: 50%;
--moz-border-radius: 50%;
--webkit-border-radius: 23%;
-z-index: 1;*/
-width: 191px;
-/*margin-left: 18px;*/
-height: 160px;
-/*padding-left: 10px;
-padding-right: -10px;*/
-background-image: url('../images/CT_logo.png');
-
-}
-
-figure.logo h2 {
-  padding-top: 150px;
-  width: 250px;
-  font-size: 200%;
-}
-
-
-
-h1 {
-  color: #7cc576;
-  font-family: Georgia;
-  font-size: 400%;
-  letter-spacing: .15em;
-  text-align: center;
-}
-
-#contact {
-  margin-top: -16px;
-  margin-left: -13px;
-}
-
-#contact a{
-  margin: 1em .25em .25em .75em;
-}
-
-
-.large-4.columns h3 {
-  margin-left: 6px;
-  margin-top: 27px;
-  color: #7cc576;
-  font-size: 120%;
-}
-
-.large-4.columns p {
-  margin-left: 6px;
-  margin-top: 10px;
-  width: 250px;
-  font-size: 14px;
-
-}
-
-.large-8.columns p {
-  font-size: 17px;
-  display: inline-block;
+.middle {
+  margin-top: 1em;
   float: left;
-  margin-left: 30px
+  width: 30%;
+  // border: 1px solid #606c88;
+  border-radius: 3px;
+  margin: 1%;
 }
 
-/*#forkme_banner {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
+#header ul li.links {
+  float: right;
+  margin-top: .275em;
+}
+
+.right_float {
+    float: right;
+}
+
+header ul li.links>ul>.link {
+  font-size: 9.8em;
+  margin: 1.2em 0 0 1.5em;
+
+}
+
+#header ul li.links>ul>.link a {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-transform: none;
+  color: #ccc;
+  text-decoration: none;
+  padding-right: 1em;
+}
+
+#header:hover ul li.links>ul>.link a:hover {
+  color: #333;
+}
+
+
+#header ul li {
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px
-}*/
+  text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+}
+
+#header ul {
+  margin-left: 2em;
+  margin-bottom: .5em;
+}
+
+#torok {
+  font-size: 265%;
+  margin-top: -2em
+}
+
+#catharina {
+  transform: scale(1.75,1.15);
+  -webkit-transform: scale(1.75,1.15);
+  margin-left: 1.5em;
+}
+
+.large-2.columns {
+  margin-left: -2em;
+  // border: 1px black solid;
+  width: 25%;
+  margin-left: -3.5em;
+}
+
+.large-2.columns p {
+  font-size: 75%;
+}
+
+.large-2.columns p a {
+  color: #606c88;
+}
+
+
+h4 {
+    font-size: 22pt;
+    color: #606c88
+}
+
+
+
+.large-9.columns p {
+
+   font-size: 91%;
+
+}
+
+.large-9.columns span {
+  font-size: 140%;
+  }
+
+
+
+
+#footer {
+  position: relative;
+  margin-top: -30px;  /*negative value of footer height */
+  clear: both;
+  padding-top: .5em;
+  padding-left: .5em;
+  font-size: 14px
+}
+
+#footer p {
+  margin: 0% 0 0% 0;
+  font-size: 80%;
+  padding-right: 2em;
+}
+
+
+
+#footer p.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #606c88;
+}
+
+#footer p.title span {
+  background: #606c88;
+  position: relative;
+  top: -10px;
+  padding: 0 20px;
+}
+
